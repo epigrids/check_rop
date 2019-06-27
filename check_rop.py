@@ -23,7 +23,7 @@ def check_rop():
 	print(df)
 
 	casename = files[0][:-7]
-	df.to_csv(casename + '.csv')
+	df.to_csv(casename + '-check_rop.csv')
 
 	return
 
