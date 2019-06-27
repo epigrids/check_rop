@@ -20,7 +20,7 @@ def check_rop():
 		'$1', 'MW2', '$2', 'SLOPE', 'VERSION'])
 
 	df = read_files(files, df)
-	print(df)
+	#print(df)
 
 	casename = files[0][:-7]
 	df.to_csv(casename + '-check_rop.csv')
