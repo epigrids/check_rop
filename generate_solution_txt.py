@@ -10,7 +10,7 @@ def generate_solution(filepath):
 
 
 	# Start writing the bus section
-	solution_file.write('-- bus section\ni, v(p.u.), theta(deg), bcs(MVAR at v = 1 p.u.)')
+	solution_file.write('-- bus section\ni, v(p.u.), theta(deg), bcs(MVAR at v = 1 p.u.)\n')
 
 	# get to the first line of bus table
 	current_line = raw_file.readline()
@@ -47,7 +47,7 @@ def generate_solution(filepath):
 		else:
 			solution_file.write(bus_values[0][0]+', '+ bus_values[0][7]+ ', '+ bus_values[0][8]+ ', '+ bus_values[1]+'\n')
 
-	solution_file.write('-- generator section\ni, id, p(MW), q(MVAR)')
+	solution_file.write('-- generator section\ni, id, p(MW), q(MVAR)\n')
 	raw_file.close()
 	raw_file = open(filepath, 'r') # open a new one to read the switch shunt table
 
